@@ -1,0 +1,6 @@
+add_subdirectory(vst3sdk)
+
+set(VST_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/vst3sdk CACHE INTERNAL "VST SDK includes" FORCE)
+set(VST_LIBS "base;sdk" CACHE INTERNAL "VST SDK libs" FORCE)
+set(VST_GUI_LIB "vstgui" CACHE INTERNAL "VSG GUI lib" FORCE)
+set(VST_GUI_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/vst3sdk/vstgui4" CACHE INTERNAL "VST GUI includes" FORCE)
